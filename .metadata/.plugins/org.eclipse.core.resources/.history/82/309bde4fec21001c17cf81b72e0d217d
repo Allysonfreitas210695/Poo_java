@@ -1,0 +1,43 @@
+package SalvaFiado.codigoFonte;
+
+import java.util.Date;
+
+public class Transacoes {
+	private Date dataCompra;
+	private int qtd_produto;
+	private int qtd_servico;
+	private boolean status;
+	
+	public Date getDataCompra() {
+		return this.dataCompra;
+	}
+	
+	public void setDataCompra(Date dataCompra) {
+		this.dataCompra = dataCompra;
+	}
+	
+	public int getQtd_produto() {
+		return this.qtd_produto;
+	}
+	
+	public void setQtd_produto(int qtd_produto) {
+		this.qtd_produto = qtd_produto;
+	}
+	
+	public int getQtd_servico() {
+		return this.qtd_servico;
+	}
+	
+	public void setQtd_servico(int qtd_servico) {
+		this.qtd_servico = qtd_servico;
+	}
+	
+	public boolean isStatus() {
+		return this.status;
+	}
+	
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+}

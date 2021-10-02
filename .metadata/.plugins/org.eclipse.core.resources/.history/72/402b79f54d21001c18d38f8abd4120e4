@@ -1,0 +1,113 @@
+package SalvaFiado;
+
+import java.util.ArrayList;
+import SalvaFiado.HerancaPessoa.Pessoa;
+
+public class Gerente extends Pessoa {
+	private int id_gerente;
+	private String login;
+	private String senha;
+	private boolean statusSenhaLogin = false;
+	@SuppressWarnings("unused")
+	private ArrayList<Produto> produto; // pq o gerente pode cadastra varios produtos
+	@SuppressWarnings("unused")
+	private ArrayList<Cliente> cliente; // pq o gerente pode cadastra varios clientes
+	@SuppressWarnings("unused")
+	private ArrayList<Servico> servico; // pq o gerente pode cadastra varios servicos
+	
+	public Gerente(int id,String nome, String cpf, String telefone, String email, String senha, String login) {
+		this.setNome(nome);
+		this.setCpf(cpf);
+		this.setTelefone(telefone);
+		this.setEmail(email);
+		this.setSenha(senha);
+		this.setLogin(login);
+	}
+	
+	public void VerificacionSenhaLogin() {
+		if(this.getLogin().equals(this.getSenha())) {
+			this.setStatusSenhaLogin(!this.getStatusSenhaLogin());
+		}
+	}
+	
+	public void cadastraCliente() {
+		
+	}
+	
+    public void cadastraProduto() {
+		
+	}
+    
+    public void cadastraServico() {
+		
+	}
+    
+    public void visualizarCliente() {
+		
+	}
+	
+    public void visualizarProduto() {
+		
+	}
+    
+    public void visualizarServico() {
+		
+	}
+    
+    public void atualizarCliente() {
+		
+   	}
+   	
+    public void atualizarProduto() {
+   		
+   	}
+       
+    public void atualizarServico() {
+   		
+   	}
+
+    public void deletarCliente() {
+		
+   	}
+   	
+    public void deletarProduto() {
+   		
+   	}
+       
+    public void deletarServico() {
+   		
+   	}
+    
+	public int getId_gerente() {
+		return id_gerente;
+	}
+	
+	public void setId_gerente(int id_gerente) {
+		this.id_gerente = id_gerente;
+	}
+	
+	public String getLogin() {
+		return this.login;
+	}
+	
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	
+	public String getSenha() {
+		return this.senha;
+	}
+	
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public boolean getStatusSenhaLogin() {
+		return this.statusSenhaLogin;
+	}
+
+	public void setStatusSenhaLogin(boolean statusSenhaLogin) {
+		this.statusSenhaLogin = statusSenhaLogin;
+	}
+	
+}

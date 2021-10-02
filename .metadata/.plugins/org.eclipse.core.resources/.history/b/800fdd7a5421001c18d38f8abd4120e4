@@ -1,0 +1,16 @@
+package SalvaFiado.TesteClasses;
+
+import SalvaFiado.Cliente;
+import SalvaFiado.Gerente;
+
+public class TesteClasse {
+
+	public static void main(String[] args) {
+		Gerente g = new Gerente(1, "Allyson", "110.913.874-19", "alisonfr83@gmail.com", "84 998138643", "12345", "12345");
+		g.showGerente();
+		
+		g.cadastraCliente(new Cliente(1,"jose","123.123.123-45","98 999922222","jose@gmail.com"));
+		g.visualizarCliente();
+	}
+
+}

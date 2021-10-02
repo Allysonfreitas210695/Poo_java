@@ -1,0 +1,31 @@
+package lambdas;
+
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
+
+public class Desafio {
+	public static void main(String[] args) {
+		Produto p = new Produto("iped", 2000, 0.1);
+		
+		Function<Produto, Double> precoAtual = prod -> prod.preco * (1 - prod.desconto);
+		System.out.println(precoAtual.apply(p));
+		
+		
+		UnaryOperator<Double> impostoMuncipal = (i) -> {
+			double ii = precoAtual.apply(p);
+			(ii >= 2500 ? 8.5 : 0.);
+		};
+		
+		UnaryOperator<Double> frete;
+		UnaryOperator<Double> arredonda;
+		Function<Double, String> formatar;
+		
+		/*
+		 * 1. A parti do produto calcula o preco real com desconto
+		 * 2. Imposto Municipal:  >= 2500 (8,5%) / < 2500(isento)
+		 * 3. Frete: >= 3000(100)/ < 30000 (50)
+		 * 4. arredondar: deixar duas casas decimais
+		 * 5. Formatar: R$1234,54
+		 * */
+	}
+}

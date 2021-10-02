@@ -1,0 +1,18 @@
+package SalvaFiado;
+
+import SalvaFiado.HerancaPessoa.Pessoa;
+
+public class Cliente extends Pessoa {
+	private int id_cliente;
+   // private int id_gerente;
+
+	public int getId_cliente() {
+		return this.id_cliente;
+	}
+
+	public void setId_cliente(int id_cliente) {
+		this.id_cliente = id_cliente;
+	}
+	
+	
+}

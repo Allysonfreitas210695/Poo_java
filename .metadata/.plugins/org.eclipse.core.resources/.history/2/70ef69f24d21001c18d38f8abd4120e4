@@ -1,0 +1,23 @@
+package SalvaFiado;
+
+import java.util.ArrayList;
+import SalvaFiado.HerancaPessoa.Pessoa;
+
+public class Cliente extends Pessoa {
+	private int id_cliente;
+	@SuppressWarnings("unused") //so para tira as interrogacoes
+	private ArrayList<Produto> prod_cliente; //pq o cliente pode comprar varios produtos
+	@SuppressWarnings("unused")
+	private ArrayList<Cliente> servico_cliente; // pq o cliente pode comprar varios servicos
+	@SuppressWarnings("unused")
+    private Gerente gerente;
+    
+	public int getId_cliente() {
+		return this.id_cliente;
+	}
+
+	public void setId_cliente(int id_cliente) {
+		this.id_cliente = id_cliente;
+	}
+	
+}

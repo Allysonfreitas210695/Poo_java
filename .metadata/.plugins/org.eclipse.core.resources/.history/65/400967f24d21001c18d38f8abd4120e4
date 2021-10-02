@@ -1,0 +1,41 @@
+package SalvaFiado;
+
+import java.util.ArrayList;
+import SalvaFiado.HerancaPessoa.Pessoa;
+
+public class Gerente extends Pessoa {
+	private int id_gerente;
+	private String login;
+	private String senha;
+	@SuppressWarnings("unused")
+	private ArrayList<Produto> produto; // pq o gerente pode cadastra varios produtos
+	@SuppressWarnings("unused")
+	private ArrayList<Cliente> cliente; // pq o gerente pode cadastra varios clientes
+	@SuppressWarnings("unused")
+	private ArrayList<Servico> servico; // pq o gerente pode cadastra varios servicos
+	
+	public int getId_gerente() {
+		return id_gerente;
+	}
+	
+	public void setId_gerente(int id_gerente) {
+		this.id_gerente = id_gerente;
+	}
+	
+	public String getLogin() {
+		return this.login;
+	}
+	
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	
+	public String getSenha() {
+		return this.senha;
+	}
+	
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+}

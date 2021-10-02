@@ -1,0 +1,10 @@
+package oo.composicao.polimofismo;
+
+public class Jantar {
+	Pessoa convidado = new Pessoa(99.65);
+	
+	Feijao ingrediente1 = new Feijao(0.150);
+	Arroz ingrediente2 = new Arroz(1.500);
+	
+	convidado.comer(ingrediente1);
+}

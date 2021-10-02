@@ -1,0 +1,11 @@
+package ConnectionPostgres;
+
+public class DemoBD {
+
+	public static void main(String[] args) {
+		ConnectionP p = new ConnectionP();
+        
+		System.out.println(p);
+	}
+
+}

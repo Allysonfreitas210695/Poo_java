@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+/home/allyson/Documentos/javaCurso/.metadata/.plugins/org.eclipse.jdt.core
+311411281.index
+2918370115.index
+2138726095.index
+3590074138.index
+3888483206.index
+3361556183.index
+1710438129.index

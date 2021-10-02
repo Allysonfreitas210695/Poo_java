@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;ConnectionPostgres.ConnectionP.CON&apos; in &apos;ConnectionPostgres.ConnectionP&apos;&#x0A;- Original project: &apos;salvaFiado&apos;&#x0A;- Original element: &apos;ConnectionPostgres.ConnectionP.CON&apos;&#x0A;- Getter method name: &apos;getCON&apos;&#x0A;- Setter method name: &apos;setCON&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;CON&apos;" flags="589830" getter="getCON" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;ConnectionPostgres{ConnectionP.java[ConnectionP^CON" insertion="0" setter="setCON" stamp="1633007146679" version="1.0" visibility="1"/>
+</session>

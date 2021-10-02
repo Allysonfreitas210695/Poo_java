@@ -1,0 +1,3 @@
+module SalvaFiado {
+	requires java.sql;
+}
