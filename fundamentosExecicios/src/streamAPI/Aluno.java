@@ -2,14 +2,18 @@ package streamAPI;
 
 public class Aluno {
 	private String nome;
-	private float nota;
+	private double nota;
 	private boolean comportamento;
 	
-
-	public Aluno(String nome, float nota, boolean comp) {
+	
+	public Aluno(String nome, double nota, boolean comp) {
 		this.nome = nome;
 		this.nota = nota;
 		this.comportamento = comp;
+	}
+	
+	public Aluno(String nome, double nota) {
+		this(nome,nota,true);
 	}
 	
 	@Override
@@ -25,11 +29,11 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	public float getNota() {
+	public double getNota() {
 		return nota;
 	}
 
-	public void setNota(float nota) {
+	public void setNota(double nota) {
 		this.nota = nota;
 	}
 
